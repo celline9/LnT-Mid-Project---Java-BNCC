@@ -31,8 +31,6 @@ public class main {
 			} catch (Exception e) {
 				System.out.println("Something went wrong");
 				scan.nextLine();
-				
-				// TODO: handle exception
 			}
 		
 		
@@ -58,10 +56,6 @@ public class main {
 			}	
 		}
 	}
-		
-		
-		// TODO Auto-generated constructor stub
-	
 	
 	int manager = 0, supervisor = 0, admin = 0;
 	void insert() {
@@ -114,8 +108,6 @@ public class main {
 		genderlist.add(gender);
 		namalist.add(nama);
 		gajilist.add(gaji);
-		
-		
 		
 			if (jabatan.equals("Manager")) {
 				manager +=1;
@@ -196,8 +188,7 @@ public class main {
 		System.out.println("ENTER to return");
 		scan.nextLine();
 		
-						}
-					
+	}				
 			
 	void view() {
 	    ascending();
@@ -210,8 +201,6 @@ public class main {
 	    }
 	    System.out.println("-----------------------------------------------------------------------------------------------------------------");
 	}
-
-	
 
 	void update() {
 	    view();
@@ -258,8 +247,6 @@ public class main {
 	    System.out.println("ENTER to return");
 	    scan.nextLine();
 	}
-
-
 	
 	void delete() {
 		view();
@@ -275,7 +262,6 @@ public class main {
 		genderlist.remove(nomor-1);
 		jabatanlist.remove(nomor-1);
 		gajilist.remove(nomor-1);
-		
 		
 		System.out.println("Karyawan dengan kode" + deletedkode + "berhasil dihapus");
 		System.out.println("ENTER to return");
@@ -307,7 +293,6 @@ public class main {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new main();
 	}
 
